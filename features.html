@@ -23,20 +23,18 @@
         li {
             margin-bottom: 10px;
         }
-        .section {
-            margin-bottom: 20px;
-        }
     </style>
 </head>
 <body>
 
     <h1>YouTube Playlist App Features</h1>
 
+    <p>Last Updated: August 14, 2025</p>
+
     <p>This list outlines features you can implement using the YouTube Data API v3, categorized into free and premium tiers.</p>
 
     <h2>Free Features (Core Functionality)</h2>
     <p>These features provide the essential experience of viewing and playing YouTube playlists.</p>
-
     <ul>
         <li><strong>User Playlist Listing</strong>: Display a list of all YouTube playlists associated with the signed-in user's account. (Uses playlists.list endpoint)</li>
         <li><strong>Playlist Video Playback</strong>: Allow users to select a playlist and play its videos sequentially within the app. (Uses playlistItems.list to get video IDs, then videos.list for video details and embedding the YouTube player)</li>
@@ -49,7 +47,6 @@
 
     <h2>Premium Features (Enhanced Experience & Advanced Functionality)</h2>
     <p>These features offer added convenience, customization, or advanced management capabilities, making them suitable for a paywall.</p>
-
     <ul>
         <li><strong>Advanced Playback Controls</strong>:
             <ul>
@@ -94,7 +91,6 @@
     </ul>
 
     <h2>Important Considerations</h2>
-
     <ul>
         <li><strong>YouTube API Terms of Service</strong>: Always ensure your app adheres to YouTube's API Services Terms of Service, especially regarding content usage and monetization. For instance, directly downloading YouTube videos for offline playback is generally prohibited by their terms.</li>
         <li><strong>Authentication Scopes</strong>: Features requiring user-specific data or actions (like managing playlists, creating comments) will require the user to grant your app specific OAuth 2.0 scopes (e.g., https://www.googleapis.com/auth/youtube.force-ssl or https://www.googleapis.com/auth/youtube). Read-only access to public data is generally easier to implement without extensive user permissions.</li>
